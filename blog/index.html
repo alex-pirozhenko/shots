@@ -1,31 +1,34 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Blog</title>
-  <meta content="Awesome shots by Alex P" name="description">
+  <meta name='description' content='Awesome shots by Alex P'>
 
-  <link href="/blog/" rel="canonical">
+  <link rel="canonical" href="/blog/">
 
   <!-- Twitter Card -->
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="Blog – Awesome shots!" name="twitter:title">
-  <meta content="" name="twitter:description">
-  <meta content="" name="twitter:image:src">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog – Awesome shots!">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="">
 
   <!-- Facebook OpenGraph -->
-  <meta content="Blog – Awesome shots!" property="og:title">
-  <meta content="" property="og:description">
-  <meta content="" property="og:image">
+  <meta property="og:title" content="Blog – Awesome shots!">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
   <!-- Ionicons -->
   <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <link href="/assets/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css">
 
 </head>
 
@@ -34,7 +37,7 @@
 
     
         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5TVT0DM17S"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TVT0DM17S"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
@@ -53,7 +56,7 @@
         <div class="logo">
           <a class="logo__link" href="/">
           
-            <img alt="Awesome shots!" class="logo__image" src="/images/logo.svg">
+            <img class="logo__image" src="/images/logo.svg" alt="Awesome shots!">
           
           </a>
         </div>
@@ -72,19 +75,19 @@
               
                 
                 <li class="nav__item">
-                  <a class="nav__link" href="/">Home</a>
+                  <a href="/" class="nav__link">Home</a>
                 </li>
                 
               
                 
                 <li class="nav__item">
-                  <a class="nav__link" href="/projects/">Collections</a>
+                  <a href="/projects/" class="nav__link">Collections</a>
                 </li>
                 
               
                 
                 <li class="nav__item">
-                  <a class="nav__link active-link" href="/blog/">Blog</a>
+                  <a href="/blog/" class="nav__link active-link">Blog</a>
                 </li>
                 
               
@@ -98,11 +101,11 @@
   <ul class="social__list list-reset">
     
     <li class="social__item">
-      <a aria-label="instagram icon" class="social__link" href="https://instagram.com/alex.pi.photography" rel="noopener" target="_blank"><i class="ion ion-logo-instagram"></i></a>
+      <a class="social__link" href="https://instagram.com/alex.pi.photography" target="_blank" rel="noopener" aria-label="instagram icon"><i class="ion ion-logo-instagram"></i></a>
     </li>
     
     <li class="social__item">
-      <a aria-label="reddit icon" class="social__link" href="https://reddit.com/user/alex_pi_photography/submitted/?sort=top" rel="noopener" target="_blank"><i class="ion ion-logo-reddit"></i></a>
+      <a class="social__link" href="https://reddit.com/user/alex_pi_photography/submitted/?sort=top" target="_blank" rel="noopener" aria-label="reddit icon"><i class="ion ion-logo-reddit"></i></a>
     </li>
     
   </ul>
@@ -147,15 +150,17 @@
     <!--bookshop-live name(posts-list/posts-list.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
           
 <div class="container animate">
-  <div class="row">
+  <div class="row" data-pagebreak="6">
     
-      <div class="c-blog-card col col-4 col-d-6 col-t-12">
+      <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[0]) -->
+          
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
   <div class="c-blog-card__inner">
 
     
     <div class="c-blog-card__image-wrap">
       <a class="c-blog-card__image" href="/blog/first-post">
-        <img alt="Hello World!" loading="lazy" src="/images/avatar-with-nikki.jpg">
+        <img loading="lazy" src="/images/avatar-with-nikki.jpg" alt="Hello World!">
       </a>
     </div>
     
@@ -165,7 +170,7 @@
       
       <div class="c-blog-card__tags-box">
         
-        <a class="c-blog-card__tag" href="/tag/test">test</a>
+        <a href="/tag/test" class="c-blog-card__tag">test</a>
         
       </div>
       
@@ -180,7 +185,7 @@
 
       <div class="c-blog-card__meta">
         <div class="c-blog-card__author-image">
-          <img alt="Alex Pirozhenko" loading="lazy" src="/images/avatar.jpg">
+          <img loading="lazy" src="/images/avatar.jpg" alt="Alex Pirozhenko">
         </div>
         <div class="c-blog-card__info">
           <div class="c-blog-card__author-name">Alex Pirozhenko</div>
@@ -191,8 +196,9 @@
     </div>
   </div>
 </div>
+          <!--bookshop-live end-->
     
-      </div>
+  </div>
 </div>
 
 <!--bookshop-live name(pagination.jekyll.html) params() context() -->
@@ -203,17 +209,17 @@
 
       <div class="pagination__list">
         
-        
-        <span class="pagination__prev disabled"><i class="ion ion-ios-arrow-back"></i> Prev</span>
+        <a data-pagebreak-control="prev" href="." class="pagination__prev"><i class="ion ion-ios-arrow-back"></i> Prev</a>
+        <span data-pagebreak-control="!prev" class="pagination__prev disabled"><i class="ion ion-ios-arrow-back"></i> Prev</span>
 
         <div class="pagination__count">
-          Page <span>1</span>
-          of <span>1</span>
+          Page <span data-pagebreak-label="current">1</span>
+          of <span data-pagebreak-label="total">1</span>
         </div>
 
         
-        
-        <span class="pagination__next disabled">Next <i class="ion ion-ios-arrow-forward"></i></span>
+        <a data-pagebreak-control="next" href="." class="pagination__next">Next <i class="ion ion-ios-arrow-forward"></i></a>
+        <span data-pagebreak-control="!next" class="pagination__next disabled">Next <i class="ion ion-ios-arrow-forward"></i></span>
       </div>
 
     </div>
@@ -244,11 +250,11 @@
   <ul class="social__list list-reset">
     
     <li class="social__item">
-      <a aria-label="instagram icon" class="social__link" href="https://instagram.com/alex.pi.photography" rel="noopener" target="_blank"><i class="ion ion-logo-instagram"></i></a>
+      <a class="social__link" href="https://instagram.com/alex.pi.photography" target="_blank" rel="noopener" aria-label="instagram icon"><i class="ion ion-logo-instagram"></i></a>
     </li>
     
     <li class="social__item">
-      <a aria-label="reddit icon" class="social__link" href="https://reddit.com/user/alex_pi_photography/submitted/?sort=top" rel="noopener" target="_blank"><i class="ion ion-logo-reddit"></i></a>
+      <a class="social__link" href="https://reddit.com/user/alex_pi_photography/submitted/?sort=top" target="_blank" rel="noopener" aria-label="reddit icon"><i class="ion ion-logo-reddit"></i></a>
     </li>
     
   </ul>
@@ -259,20 +265,20 @@
         <ul class="footer_nav list-reset">
           
           <li class="footer_nav__item">
-            <a class="footer_nav__link" href="/">Home</a>
+            <a href="/" class="footer_nav__link">Home</a>
           </li>
           
           <li class="footer_nav__item">
-            <a class="footer_nav__link" href="/projects/">Collections</a>
+            <a href="/projects/" class="footer_nav__link">Collections</a>
           </li>
           
           <li class="footer_nav__item">
-            <a class="footer_nav__link" href="/blog/">Blog</a>
+            <a href="/blog/" class="footer_nav__link">Blog</a>
           </li>
           
         </ul>
 
-        <div class="copyright"><p> 2023 © <a href="/">Alex Pirozhenko</a>.</p></div>
+        <div class="copyright"><p> 2023 &copy; <a href="/">Alex Pirozhenko</a>.</p></div>
 
       </div>
     </div>
@@ -315,5 +321,5 @@
 
     <script src="/js/scripts.js"></script>
     <script src="/js/common.js"></script>
-
-</body></html>
+</body>
+</html>
